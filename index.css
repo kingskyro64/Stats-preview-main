@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+ 
+:root{  
+
+    --background-color: hsl(233, 47%, 7%); 
+    --card-background: hsl(244, 38%, 16%);
+    --insight-color-img: hsl(277, 64%, 61%); 
+} 
+
+*{ 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+} 
+
+body{ 
+    background-color: var(--background-color);  
+    font-family: 'Lexend Deca' , cursive;
+} 
+
+main{  
+    background-color: var(--card-background);
+    display: flex; 
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 2rem auto; 
+    border-radius: 2em; 
+    overflow: hidden;
+} 
+
+img{
+    display: flex; 
+    max-width: 100%;  
+    mix-blend-mode: multiply;
+}   
+
+picture{ 
+    background-color: hsl(277, 64%, 61%);  
+    display: flex; 
+}
+
+a{
+    color: var(--insight-color-img);
+}
+
+.text{ 
+    padding: 2em 4em; 
+    display: flex; 
+    flex-direction: column;
+} 
+
+.words{ 
+    color: hsla(0, 0%, 100%, 0.75); 
+    font-size: 1em;  
+    font-weight: 400;
+}
+
+h1{ 
+    font-family: 'inter' , cursive; 
+    font-weight: 700; 
+    padding-bottom: 20px; 
+    text-align: center; 
+    color: hsl(0, 0%, 100%);
+} 
+
+p{ 
+    font-weight: 400; 
+    font-size: 1em; 
+    text-align: center;  
+    color: hsla(0, 0%, 100%, 0.75);
+} 
+
+
+
+ul{ 
+    flex-direction: column; 
+    text-align: center; 
+    list-style-type: none;
+    display: flex;
+    margin: 2em; 
+    line-height: 3em;
+}
+
+span{ 
+    display: block;
+}
+
+.digits{ 
+    font-family: 'inter' , cursive; 
+    font-weight: 400; 
+    font-size: 2em; 
+    color: hsl(0, 0%, 100%);
+} 
+
+@media (min-width: 1170px) { 
+    main{ 
+        flex-direction: row;
+        max-width: 70rem; 
+        margin-top: 6rem;
+    } 
+
+    span{ 
+        display: inline;
+    }
+    
+    .text{ 
+        max-width: 50%;
+    }  
+
+    ul{ 
+        line-break: 5em; 
+        display: flex; 
+    } 
+
+    ul{ 
+        display: flex; 
+        list-style-type: none; 
+        padding-left: 2em;  
+        flex-direction: row;
+    }
+
+    picture{ 
+        max-width: 50%;
+    }
+}
